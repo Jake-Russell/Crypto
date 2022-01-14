@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lAI-C0-K9D">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="lka-0H-bjF">
+                                <rect key="frame" x="0.0" y="862" width="414" height="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="seY-uo-1vh">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-transparent" translatesAutoresizingMaskIntoConstraints="NO" id="YDW-AK-QqC">
+                                        <rect key="frame" x="157" y="359" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="1wa-B0-HcW"/>
+                                            <constraint firstAttribute="width" constant="100" id="eYC-wI-ZJ4"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="YDW-AK-QqC" firstAttribute="centerX" secondItem="seY-uo-1vh" secondAttribute="centerX" id="8Cq-dj-v1e"/>
+                                    <constraint firstItem="YDW-AK-QqC" firstAttribute="centerY" secondItem="seY-uo-1vh" secondAttribute="centerY" id="S3V-gZ-k3A"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="y6L-o9-X8l"/>
+                        <color key="backgroundColor" name="LaunchBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="seY-uo-1vh" firstAttribute="leading" secondItem="y6L-o9-X8l" secondAttribute="leading" id="1Rz-1k-ghd"/>
+                            <constraint firstItem="y6L-o9-X8l" firstAttribute="centerX" secondItem="lka-0H-bjF" secondAttribute="centerX" id="9Om-8Z-MXR"/>
+                            <constraint firstItem="seY-uo-1vh" firstAttribute="top" secondItem="y6L-o9-X8l" secondAttribute="top" id="AbL-Tq-yja"/>
+                            <constraint firstItem="lka-0H-bjF" firstAttribute="leading" secondItem="y6L-o9-X8l" secondAttribute="leading" symbolic="YES" id="QYB-mE-YZQ"/>
+                            <constraint firstItem="y6L-o9-X8l" firstAttribute="bottom" secondItem="seY-uo-1vh" secondAttribute="bottom" id="TSZ-8u-dvk"/>
+                            <constraint firstItem="seY-uo-1vh" firstAttribute="trailing" secondItem="y6L-o9-X8l" secondAttribute="trailing" id="Wax-jx-hO0"/>
+                            <constraint firstItem="y6L-o9-X8l" firstAttribute="trailing" secondItem="seY-uo-1vh" secondAttribute="trailing" id="q7i-7C-lEW"/>
+                            <constraint firstAttribute="bottom" secondItem="lka-0H-bjF" secondAttribute="bottom" constant="20" id="uVR-fu-Swo"/>
+                            <constraint firstItem="seY-uo-1vh" firstAttribute="top" secondItem="y6L-o9-X8l" secondAttribute="top" id="ugG-yF-wzu"/>
+                            <constraint firstItem="lka-0H-bjF" firstAttribute="top" secondItem="seY-uo-1vh" secondAttribute="bottom" id="xe3-Td-1gE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="80"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo-transparent" width="100" height="100"/>
+        <namedColor name="LaunchBackgroundColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
